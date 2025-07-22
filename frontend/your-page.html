@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Your page</title>
-</head>
-<body>
-     <header>
-        <a class="button header-link" href="index.html">AI stories</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Shmood</title>
+  </head>
+  <body>
+    <header>
+      <a class="button header-link" href="index.html">AI s</a>
     </header>
     <main>
-        <h1>This is where you can build your user interface</h1>
+      <h1>What’s your mood?</h1>
+      <input
+        type="text"
+        id="mood"
+        placeholder="e.g. nostalgic, happy, chilled"
+      />
+      <button id="recommend-btn" onclick="getRecommendation()">
+        Get Recommendation
+      </button>
+      <p id="result"></p>
+
+      <script src="your-script.js"></script>
     </main>
-</body>
+  </body>
 </html>
