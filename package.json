@@ -1,0 +1,26 @@
+{
+  "name": "ai-api-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Jaz-spec/AI-API-workshop#readme",
+  "bugs": {
+    "url": "https://github.com/Jaz-spec/AI-API-workshop/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaz-spec/AI-API-workshop.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "openai": "^5.8.3"
+  }
+}

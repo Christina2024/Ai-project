@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Stories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="header-link button" href="your-page.html">Your page</a>
+    </header>
+    <main>
+        <h1>AI Stories</h1>
+        <form id="input-form" class="input-form">
+            <label for="input-text">Give me a word or a concept, and I'll write a story for you:</label>
+            <textarea id="input-text" class="input-text" name="input-text" rows="4" required></textarea>
+            <button class="button" type="submit">Write me a story</button>
+        </form>
+        <div class="ai-output-container">
+            <h2>Your AI story</h2>
+            <div id="ai-output" class="ai-output"></div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

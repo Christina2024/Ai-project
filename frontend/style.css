@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #FFA500; /* Orange */
+    --primary-color-light: rgba(255, 165, 0, 0.2);
+    --text-color: #333;
+    --text-color-secondary: #555;
+    --background-color: rgb(254, 252, 247);
+    --background-color-secondary: #fafafa;
+    --border-color: #ddd;
+    --border-color-light: #eee;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/*Header */
+.header-link {
+    text-decoration: none;
+    width: 10%;
+}
+
+
+/* Main container */
+main {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: left;
+    color: var(--text-color-secondary);
+}
+
+/* Form styling */
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.9em;
+    color: var(--text-color-secondary);
+}
+
+.input-text {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    resize: vertical;
+    min-height: 60px;
+}
+
+.input-text:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color-light);
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* AI Output container */
+.ai-output-container {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.ai-output {
+    background-color: var(--background-color-secondary);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color-light);
+    min-height: 50px;
+    line-height: 1.6;
+    color: var(--text-color);
+}

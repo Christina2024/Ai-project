@@ -1,0 +1,13 @@
+ports:
+  - name: Dev Server
+    description: Development server
+    port: 3000
+    onOpen: open-browser
+    visibility: public
+
+tasks:
+  - name: Setup
+    init: |
+      npm install
+    command: |
+      npm run dev
